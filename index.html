@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Spicy Hut - Restaurant in Chennai</title>
+    <style>
+        :root{
+         --red:crimson;
+         --yellow:#ffc54d;
+         --green:#53bf9d;
+         --white:whitesmoke;
+        }
+        body{
+         font-family: Arial, Helvetica, sans-serif;
+         background-image:url(images/img1.jpg);
+         background-size: cover;
+         background-position: center;
+         height: 100vh;
+        }
+
+        .landing{
+         color:var(--white);
+        }
+
+        header a{
+         text-decoration: none;
+         color:var(--yellow);
+         min-width: 120px;
+        }
+
+        header{
+         display: flex;
+         padding:1em;
+         flex-wrap: wrap;
+         row-gap: 1em;
+        }
+
+        #logo{
+         flex:3;
+         font: size 1.25em;
+         min-width: 260px;
+        }
+
+        nav{
+         flex:2;
+         display:flex;
+         align-items: center;
+        
+        }
+
+        nav a{
+         flex:1;
+        }
+
+        nav a:hover{
+         color:var(--green);
+        }
+        header h2 i,nav a i{
+            margin-right: .5em;
+        }
+
+        .maintext{
+         display: flex;
+         flex-direction: column;
+         height: 50vh;
+         justify-content:center;
+         padding:2em;
+         }
+         
+         .tagline1{
+            color:hsl(147, 94%, 49%);
+            font-size: 2.5em;
+            font-weight:bolder; 
+         }
+         .tagline2{
+            color:var(--yellow)
+        
+         }
+         .maintext div{
+            margin-top: .75em;
+         }
+         .maintext button{
+            width:20vw;
+            margin-top:2em;
+            border-radius:10px;
+            padding:.7em;
+            background:var(--green);
+            color:var(--white);
+            border: 1px solid var(--green);
+         }
+
+    </style>
+    <script type="text/javascript">
+        function validate()
+        {
+            var email =document.getElementById("uname");
+            var password =document.getElementById("pass");
+            
+
+            if (email.value==""|| password.value=="")
+            {
+                alert("Credentials can't be blank");
+                return false;
+            }
+            else{
+                alert("Welcome to experience the real spice");
+                true;
+            }
+        }
+    </Script>
+    <style>
+        .form{
+        width: 250px;
+        height:380px ;
+        position: absolute;
+        top: 200px;
+        left: 950px;
+        border-radius:10px ;
+        padding: 30px;
+        align-items: center;
+        text-align: center;
+        }
+
+        .form h2{
+            width:18 0px;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 2px;
+            margin-bottom:10px;;
+            margin-left: 10px; 
+            }
+            .form input{
+            width: 240px;
+            height: 35px;
+            background: transparent;
+            border-top: 4px solid teal;
+            border-left: 2px solid teal;
+            border-right: 2px solid teal;
+            border-bottom: 2px solid teal  ;
+            border-radius: 10px;
+           background-color: cornsilk;
+           }    
+            
+           ::placeholder{
+            color: black;
+            font-size: 16px;
+        }
+
+        .btnn{
+            width: 180px;
+            height: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            padding-left: 10px;  
+            background: transparent;  
+            border-top: 3px solid teal ;
+            border-right: 2px solid teal;
+            border-bottom: 2px solid teal;
+            border-left: 2px solid teal ;
+            background-color: cornsilk;   
+        } 
+
+        .btnn:hover{
+            background-color:bisque;
+        } 
+
+    footer{
+        background-color:transparent;
+        padding:.25em 1em;
+        
+    }
+
+    #copyright{
+        margin-left:20px;
+        color: aliceblue;
+        font-size:large;
+    }
+    .social-menu ul{
+        display: flex;
+        padding:0;
+    }
+    
+    .social-menu ul li{
+        list-style: none;
+        display:inline-block;
+        margin: 0 15px;
+    }
+    
+    .social-menu ul li .fab{
+        font-size: 25px;
+        line-height: 40px;
+        transition: .3s;
+        color:aliceblue;
+    }
+    
+    .social-menu ul li .fab:hover{
+        color: #fff;
+    }
+    
+    .social-menu ul li a{
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color:black;
+        text-align: center;
+        transition: .6s;
+        box-shadow: 0 5px 4px rgba(0,0,0,.5);
+    }
+        
+    .social-menu ul li a:hover{
+        transform: translate(0, -10%);
+    }
+    
+    .social-menu ul li:nth-child(1) a:hover{
+        background-color: #4267B2;
+    }
+    .social-menu ul li:nth-child(2) a:hover{
+        background-color: #E4405F;
+    }
+    .social-menu ul li:nth-child(3) a:hover{
+        background-color: #00ACEE;
+    }
+
+        </style>
+
+</head>
+<body>
+ <div class="landing">
+    <header>
+        <a href="index.html"id="logo"><h1><i class="fa-solid fa-bowl-rice"></i>Spicy Hut</h1></a>
+        <nav>
+            <a href="menu.html"><i class="fa-solid fa-bars"></i>Menu</a>
+            <a href="location.html"><i class="fa-solid fa-location-dot"></i>Locations</a>
+        </nav>
+    </header>
+     <div class="maintext">
+        <div class="tagline1">
+            Finest Treat for Your Taste Bud
+        </div>
+        <div class="tagline2">
+            Freshest Ingredients Guranteed
+        </div>
+        <div class="callus">
+            Call us @+91 8148854867
+        </div>
+        <button><a href="orderonline.html">Online Orders</a></button>
+    </div>
+
+ </div> 
+ <div class="form">
+    <h2>Login</h2><br><br>
+    <form onsubmit="return validate()" >
+       <input id="uname" type="email" name="email" placeholder="Enter email"><br><br>
+       <input id="pass" type="password" name="" placeholder="Enter password"><br>
+       <button class="btnn" type="submit"><a href="menu.html">LOGIN</a></button>
+       
+    </form>
+    
+        </div>    
+        <footer>
+            <div class="social-menu">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                </ul>
+            </div>
+            <div id="copyright">&#169 copyright Spicy Hut</div>
+        </footer>
+    </body>
+    </html>
+      

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+    .locations{
+        background-color:transparent;
+        color:aliceblue;
+        display:flex;
+        flex-wrap:wrap;
+    }
+    
+    .locations h2{
+        color:aliceblue;
+        margin-bottom: .8em;
+    
+    }
+    
+    .locations div{
+        flex:1;
+        padding:1em;
+        min-width:220px;
+        font-style: italic;
+    
+    }
+    
+    footer{
+        background-color:transparent;
+        padding:.25em 1em;
+        
+    }
+    
+    #copyright{
+        margin-left:20px;
+        color: aliceblue;
+        font-size: 30px;
+    }
+    .social-menu ul{
+        display: flex;
+        padding:0;
+    }
+    
+    .social-menu ul li{
+        list-style: none;
+        display:inline-block;
+        margin: 0 15px;
+    }
+    
+    .social-menu ul li .fab{
+        font-size: 25px;
+        line-height: 40px;
+        transition: .3s;
+        color:aliceblue;
+    }
+    
+    .social-menu ul li .fab:hover{
+        color: #fff;
+    }
+    
+    .social-menu ul li a{
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color:black;
+        text-align: center;
+        transition: .6s;
+        box-shadow: 0 5px 4px rgba(0,0,0,.5);
+    }
+        
+    .social-menu ul li a:hover{
+        transform: translate(0, -10%);
+    }
+    
+    .social-menu ul li:nth-child(1) a:hover{
+        background-color: #4267B2;
+    }
+    .social-menu ul li:nth-child(2) a:hover{
+        background-color: #E4405F;
+    }
+    .social-menu ul li:nth-child(3) a:hover{
+        background-color: #00ACEE;
+    }
+    #locheading{
+        color: aliceblue;
+        font-size: xx-large;
+    }
+    </style>
+</head>
+<body><h2 id="locheading">Locations</h2>
+    <div class="locations">
+        <div class="annanagar">
+            <h2>Anna Nagar</h2>
+            <address>
+                15, 10th Main Road</br>
+                Anna Nagar,</br>
+                Chennai - 600102
+            </address>
+        </div>
+        <div class="velachery">
+            <h2>Velachery</h2>
+            <address>
+                5, 3rd Cross Road,</br>
+                Vijaya Nagar,</br>
+                Velachery,</br>
+                Chennai - 600042
+            </address>
+        </div>
+        <div class="Tambaram">
+            <h2>Tambaram</h2>
+            <address>
+                145, MIT Road,</br>
+                Tambaram,</br>
+                Chennai - 600045
+            </address>
+        </div>
+    </div>    
+    <footer>
+        <div class="social-menu">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+            </ul>
+        </div>
+        <div id="copyright">&#169 copyright Spicy Hut</div>
+    </footer>
+</body>
+</html>
